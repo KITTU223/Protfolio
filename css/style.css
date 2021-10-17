@@ -7,6 +7,11 @@
     font-family: 'poppins', sans-serif;
 }
 
+*::selection{
+    background: rgba(247, 68, 2);
+    color: #fff;
+  }
+
 header{
     z-index: 999;
     position: absolute;
