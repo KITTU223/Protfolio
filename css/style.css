@@ -204,6 +204,138 @@ section{
     transition-property: clip-path;
 } 
 
+/* skills */
+
+ .skills{
+    height: auto;
+    display: flex;
+    background: orangered;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .s_content{
+    margin: auto;
+    width: 100%;
+}
+
+.skills .s_content h2{
+    width: 60%;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+    background: yellow;
+    color: black;
+    padding: .6rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.skill_container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    height: auto;
+    background: yellow;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.single_skill{
+    color: black;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.single_skill .info .name, .single_skill .info .percentage{
+    position: absolute;
+    margin-top: -1.2rem;
+}
+
+.l-86{
+	left: 86%;
+}
+
+.l-80{
+	left: 80%;
+}
+
+.l-60{
+	left: 60%;
+}
+
+.l-70{
+	left: 70%;
+}
+
+.progressbar{
+    margin-top: 18px;
+    background: #f0f0f0;
+    width: 100%;
+    height: 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.fillpercentage{
+    height: inherit;
+    background: orangered;
+    border-radius: 1rem;
+    width: 0%;
+}
+
+.w-86{
+    --animationwidth: 86%;
+    width: 86%;
+    animation: filldiv 5s;
+}
+
+.w-80{
+    --animationwidth: 80%;
+    width: 80%;
+    animation: filldiv 10s;
+}
+
+.w-60{
+    --animationwidth: 60%;
+    width: 60%;
+    animation: filldiv 10s;
+}
+
+.w-70{
+    --animationwidth: 70%;
+    width: 70%;
+    animation: filldiv 10s;
+}
+
+.cmt_w-86{
+    width: 86%;
+}
+
+.cmt_w-80{
+    width: 80%;
+}
+
+.cmt_w-60{
+    width: 60%;
+}
+
+.cmt_w-70{
+    width: 70%;
+}
+
+@keyframes filldiv{
+    from { width: 0;}
+    to {width: var(--animationwidth);}
+}
+
+.d_simg img {
+    pointer-events: none;
+    user-select: none;
+}
+
+/* responsive */
+
 @media(max-width:1040px){
     header{
         padding: 12px 20px;
@@ -269,4 +401,9 @@ section{
     .home .content h1 {
         font-size: 2.3em;
     }
+
+    .flx-row-r {
+		flex-direction: column;
+	}
+
 }
