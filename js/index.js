@@ -30,3 +30,20 @@ btns.forEach((btn, i) =>{
         sliderNav(i);
     });
 });
+
+//skills
+
+const fill = document.querySelector('.fillpercentage');
+const skillbox = document.querySelector('.skill_container');
+
+fillbar = (e) =>{
+fill.forEach(eachfill=>{
+    let cls = eachfill.getAttribute('class');
+    if(e){
+        eachfill.setAttribute("class", cls.replace("cmt_",""));
+    }else{
+        eachfill.setAttribute("class", cls.replace("w-", "cmt_w-"));
+    }
+})
+}
+intoview(skillbox,fillbox);
